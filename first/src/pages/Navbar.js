@@ -11,8 +11,7 @@ const Navbar = () => {
         <div className="space-x-4">
           <Link to="/dashboard" className="text-white">Dashboard</Link>
           <Link to="/profile" className="text-white">Profile</Link>
-          <Link to="/pages/LoginPage" className="text-white">Logout
-            </Link>
+          <Link to="/pages/LoginPage" className="text-white">Logout</Link>
         </div>
       </div>
     </nav>

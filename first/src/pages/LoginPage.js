@@ -21,6 +21,9 @@ const LoginPage = () => {
     } else if (userType === 'Employee') {
       navigate('/employee');
     }
+    else if(userType === 'HR') {
+      navigate('./pages/HrPage');
+    }
   };
 
   const handleUserTypeChange = (e) => {
@@ -57,7 +60,7 @@ const LoginPage = () => {
             <option value="Select the Role">Select the Role</option>
             <option value="Admin">Admin</option>
             <option value="Employee">Employee</option>
-            <option value="HR"  >HR</option>
+            <option value="HR">HR</option>
             </select>
         </div>
         <div className="mb-4">
