@@ -36,8 +36,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex bg-gradient-to-r from-amber-200 to-yellow-400 justify-center items-center h-screen">
-      <div className="bg-gradient-to-r from-blue-400 to-teal-400 bg-opacity- rounded-lg shadow-lg p-8">
+    <div className="flex bg-gradient-to-r from-blue-200 to-white-400 justify-center items-center h-screen">
+      <div className="bg-gradient-to-r from-blue-400 to-teal-400 bg-opacity-rounded-lg shadow-lg p-16">
         <div className="flex justify-center mb-4">
           <img src={logo} alt="Logo" className="w-20 h-20 rounded-full" />
         </div>
@@ -57,7 +57,8 @@ const LoginPage = () => {
             <option value="Select the Role">Select the Role</option>
             <option value="Admin">Admin</option>
             <option value="Employee">Employee</option>
-          </select>
+            <option value="HR"  >HR</option>
+            </select>
         </div>
         <div className="mb-4">
           <label htmlFor="email" className="block mb-2">
