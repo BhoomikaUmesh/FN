@@ -30,7 +30,6 @@ const HrPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleApprove = (id) => {
-    // Handle approval logic here
     const updatedRequests = leaveRequests.map((request) =>
       request.id === id ? { ...request, status: 'Approved' } : request
     );
@@ -39,12 +38,16 @@ const HrPage = () => {
   };
 
   const handleReject = (id) => {
-    // Handle rejection logic here
     const updatedRequests = leaveRequests.map((request) =>
       request.id === id ? { ...request, status: 'Rejected' } : request
     );
     setLeaveRequests(updatedRequests);
     alert('Request Rejected!');
+  };
+
+  const handleSearch = () => {
+    // Perform search logic here
+    // You might filter the data based on the searchTerm and update the state
   };
 
   const filteredRequests = leaveRequests.filter((request) =>
@@ -64,7 +67,10 @@ const HrPage = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={handleSearch}
+        >
           Search
         </button>
       </div>

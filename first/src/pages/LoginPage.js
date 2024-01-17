@@ -21,9 +21,9 @@ const LoginPage = () => {
     } else if (userType === 'Employee') {
       navigate('/employee');
     }
-    // else if(userType === 'HR') {
-    //   navigate('./pages/HrPage');
-    // }
+    else {
+      navigate('./hr');
+    }
   };
 
   const handleUserTypeChange = (e) => {
